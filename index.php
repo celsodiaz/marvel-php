@@ -42,7 +42,9 @@ curl_close($ch);
         <h3><?= $data["title"]; ?> se estrena el <?= $data["days_until"];?> dias</h3>
         <h2>Fecha de estreno: <?= $data["release_date"]; ?></h2>
         <p>La siguiente es: <?= $data["following_production"][ "title"]?></p>
+        <p>@celsodiaz8</p>
     </hgroup>
+    
 </main>
 
 <style>
