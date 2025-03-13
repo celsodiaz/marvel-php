@@ -39,12 +39,13 @@ curl_close($ch);
      style="border-radius: 16px"/>
     </section>
     <hgroup>
-        <h3><?= $data["title"]; ?> se estrena el <?= $data["days_until"];?> dias</h3>
+        <h3><?= $data["title"]; ?> se estrena en <?= $data["days_until"];?> dias</h3>
         <h2>Fecha de estreno: <?= $data["release_date"]; ?></h2>
         <p>La siguiente es: <?= $data["following_production"][ "title"]?></p>
-        <p>@celsodiaz8</p>
     </hgroup>
-    
+    <footer>
+    <p>@celsodiaz8</p>
+    </footer>
 </main>
 
 <style>
@@ -69,4 +70,12 @@ curl_close($ch);
     img {
         margin: 0 auto;
     }
+    footer {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
 </style>
